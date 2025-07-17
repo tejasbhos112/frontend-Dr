@@ -1,10 +1,14 @@
 import React from 'react'
+import TopHeader from './TopHeader'
 
 const Header = () => {
   return (
-    
+    <>
+    <div>
+        <TopHeader />
+    </div>
     <div className=''>
-        <div className="navbar shadow-sm fixed">
+        <div className="navbar shadow-sm sticky bg-[#010f26]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,11 +48,11 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn mr-6 p-4">Create Account</a>
+    <a className="btn mr-6 p-4 bg-teal-500 text-white border-none">Create Account</a>
   </div>
 </div>
-
     </div>
+    </>
   )
 }
 
