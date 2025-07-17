@@ -5,6 +5,7 @@ import About from '../About'
 const HomePage = () => {
   return (
     <div>
+        
         <Home />
         <About />
     </div>
