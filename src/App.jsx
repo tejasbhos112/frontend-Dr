@@ -5,6 +5,7 @@ import HomePage from "./components/navigation/HomePage";
 import { Provider } from "react-redux";
 import appStore from "./components/appStore";
 import Login from "./components/Login";
+import Services from "./components/Services";
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>} />
          <Route path="/about" element={<About/>} /> 
-         <Route path="/patient/login" element={<Login/>} />
+        <Route path="/patient/signup" element={<Login />} />
+        <Route path="/patient/login" element={<Login />} />
+         <Route path="/services" element={<Services/>} />
         
       </Routes>
     </BrowserRouter>

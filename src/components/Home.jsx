@@ -8,9 +8,9 @@ import telemedicine from "../assets/images/telemedicine.png"
 const Home = () => {
   return (
     <>
-       <div className="relative">
+       <div className="relative  ">
         <Header />
-        <div className="relative">
+        <div className="relative -z-99">
           <img
             className="w-full h-[105vh] object-cover "
             src={homeImg}

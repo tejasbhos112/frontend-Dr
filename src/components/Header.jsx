@@ -10,7 +10,7 @@ import instagram from "../assets/images/instagram.png"
 const Header = () => {
   return (
     <>
-    <div>
+    <div >
         <div className='flex justify-between bg-white p-4'>
        
                <div className='flex'>
@@ -88,9 +88,13 @@ const Header = () => {
        <li className='font-bold text-xl text-white'><a>Contact</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn mr-6 p-4 bg-teal-500 text-white border-none">Create Account</a>
-  </div>
+ <div className="dropdown dropdown-end">
+  <div tabIndex={0} role="button" className="btn m-1  bg-teal-400 border-none">Create Account</div>
+  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box w-52 p-2 shadow-sm">
+    <li><a>Doctor</a></li>
+    <li><a>Patient</a></li>
+  </ul>
+</div>
 </div>
     </div>
     </>
